@@ -38,8 +38,7 @@ public class EditAppointmentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         appointment = DataLayer.pickEditableAppointment();
-        if (appointment == null)
-        {
+        if (appointment == null) {
             Utils.closeCurrentWindow(box);
             return;
         }
@@ -66,8 +65,10 @@ public class EditAppointmentController implements Initializable {
     }
 
     public void setVisitorsCount() {
-        int visitorsCount = Integer.parseInt(visitorsField.getText());
-        System.out.println(visitorsCount);
-        appointment.setVisitorsCount(visitorsCount);
+        var text = visitorsField.getText();
+        if (!text.isEmpty()) {
+            int visitorsCount = Integer.parseInt(text);
+            appointment.setVisitorsCount(visitorsCount);
+        }
     }
 }

@@ -12,7 +12,8 @@ public class Utils {
     public static void setTextFieldNumberOnly(TextField textField) {
         textField.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue,
                                               String newValue) -> {
-            if (!newValue.matches("\\d*")) {
+
+            if (!newValue.matches("[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)")) {
                 textField.setText(newValue.replaceAll("\\D", ""));
             }
         });

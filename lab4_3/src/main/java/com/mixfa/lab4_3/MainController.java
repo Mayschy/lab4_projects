@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class MainController implements Initializable {
     public TextField firstField;
     public TextField secondField;
     public Label answerLabel;
@@ -26,10 +26,10 @@ public class HelloController implements Initializable {
     }
 
     public void calculate(ActionEvent actionEvent) {
-        var firstNumber = Integer.parseInt(firstField.getText());
-        var secondNumber = Integer.parseInt(secondField.getText());
+        var firstNumber = Double.parseDouble(firstField.getText());
+        var secondNumber = Double.parseDouble(secondField.getText());
 
-        int answer;
+        double answer;
 
         var selectedToggle = multBtn.getToggleGroup().getSelectedToggle();
         if (selectedToggle == multBtn)

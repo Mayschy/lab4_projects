@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0"
+            prefWidth="534.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mixfa.lab4_4.MainController">
+    <children>
+        <TableView fx:id="tableView" layoutX="25.0" layoutY="101.0" prefHeight="398.0" prefWidth="497.0">
+            <columns>
+                <TableColumn fx:id="ukrColumn" prefWidth="248.0" text="Ukranian"/>
+                <TableColumn fx:id="engColumn" prefWidth="248.0" text="English"/>
+            </columns>
+        </TableView>
+        <TextField onKeyTyped="#onSearchEdited" fx:id="searchField" layoutX="26.0" layoutY="58.0" prefHeight="25.0" prefWidth="497.0" promptText="Search"/>
+        <ToolBar prefHeight="40.0" prefWidth="534.0">
+            <items>
+                <Button onAction="#addEntry" mnemonicParsing="false" text="Add entry"/>
+                <Button onAction="#save" mnemonicParsing="false" text="Save"/>
+                <Button onAction="#load" mnemonicParsing="false" text="Load"/>
+            </items>
+        </ToolBar>
+    </children>
+</AnchorPane>

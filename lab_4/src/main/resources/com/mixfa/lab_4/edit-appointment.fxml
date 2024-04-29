@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox prefHeight="198.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mixfa.lab_4.controller.EditAppointmentController" fx:id="box">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="198.0" prefWidth="275.0"
+                xmlns="http://javafx.com/javafx/21"
+                xmlns:fx="http://javafx.com/fxml/1"
+    >
+        <children>
+            <Text layoutX="31.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit appointment"/>
+            <Button layoutX="77.0" layoutY="159.0" mnemonicParsing="false"
+                    onAction="#save" text="Save" textAlignment="CENTER"/>
+            <ChoiceBox onAction="#onSelectShift" fx:id="shiftChoiceBox" layoutX="14.0" layoutY="57.0"
+                       prefWidth="150.0"/>
+            <Text layoutX="200.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift"/>
+            <DatePicker onAction="#onSelectDate" fx:id="datePicker" layoutX="14.0" layoutY="94.0" prefHeight="25.0"
+                        prefWidth="167.0"/>
+            <Text layoutX="200.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date"/>
+            <TextField onKeyTyped="#setVisitorsCount" fx:id="visitorsField" layoutX="15.0" layoutY="126.0"
+                       promptText="Visitors count"/>
+            <Text layoutX="187.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitors count"/>
+            <Button layoutX="161.0" layoutY="159.0" mnemonicParsing="false"
+                    onAction="#deleteAppointment" text="Delete" textAlignment="CENTER"/>
+        </children>
+    </AnchorPane>
+</VBox>

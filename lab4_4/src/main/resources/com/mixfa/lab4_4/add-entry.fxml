@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0"
+            prefWidth="369.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mixfa.lab4_4.NewEntryController">
+    <children>
+        <TextField fx:id="urkField" layoutX="14.0" layoutY="42.0"/>
+        <Text layoutX="65.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ukranian"/>
+        <TextField fx:id="engField" layoutX="204.0" layoutY="44.0"/>
+        <Text layoutX="247.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English"/>
+        <Button onAction="#addClicked" layoutX="150.0" layoutY="86.0" mnemonicParsing="false" text="Add entry"/>
+    </children>
+</AnchorPane>

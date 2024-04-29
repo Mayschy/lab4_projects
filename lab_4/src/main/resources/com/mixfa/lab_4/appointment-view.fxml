@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0"
+      prefWidth="286.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mixfa.lab_4.controller.AppointmentViewController">
+    <AnchorPane prefHeight="150.0" prefWidth="286.0">
+        <Text layoutX="105.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment"/>
+        <Text fx:id="shiftField" layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift:"/>
+        <Text fx:id="visitorsCountField" layoutX="21.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitors count:"/>
+        <Text fx:id="dateField" layoutX="19.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:"/>
+    </AnchorPane>
+</VBox>
